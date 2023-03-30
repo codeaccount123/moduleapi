@@ -7,7 +7,7 @@ from db import db
 import models
 
 
-from resources.item import blp as ItemBlueprint
+# from resources.item import blp as ItemBlueprint
 from resources.store import blp as StoreBlueprint
 
 
@@ -36,7 +36,7 @@ def create_app(db_url=None):
    
    
    
-    api.register_blueprint(ItemBlueprint)
+    # api.register_blueprint(ItemBlueprint)
     api.register_blueprint(StoreBlueprint)
     
     return app
